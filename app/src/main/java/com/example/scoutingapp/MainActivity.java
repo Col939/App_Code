@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean navBarOpen = false;
+    public boolean navBarOpen = false;
 
 
     public void onClick(View v) {
@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.pit_scouting);
         } else if (v.getId() == R.id.matchScouting) {
             setContentView(R.layout.match_scouting);
-        } else if (v.getId() == R.id.navBarArrow) {
-            toggleNavBar();
-        }
+        } //else if (v.getId() == R.id.navBarArrow) {
+        //toggleNavBar();
+        // }
 
     }
 
-    public void toggleNavBar() {
-        if (navBarOpen == false) {
-
-        }
-    }
+//    public void toggleNavBar() {
+//        if (navBarOpen == false) {
+//
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
